@@ -3,6 +3,8 @@ AI/ML Engineer Task Submission - Backbencher Studio
 Author: Md Rasel Uddin
 Date: August 2025
 
+<img width="1070" height="672" alt="image" src="https://github.com/user-attachments/assets/3f3ef619-13a1-4c36-b215-af5aa44bba9f" />
+
 
 This project demonstrates **sentiment analysis**  for IMDB movie reviews, classifying them as either Positive or Negative on movie reviews using two approaches:
 
