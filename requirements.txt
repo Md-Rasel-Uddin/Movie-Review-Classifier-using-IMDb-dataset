@@ -1,0 +1,3 @@
+joblib
+transformers
+streamlit
