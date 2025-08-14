@@ -18,7 +18,7 @@ The application allows you to **choose the model (ML/DL)** interactively and tes
 
 ---
 
-🎯 Task Requirements Completed
+## 🎯 Task Requirements Completed
 ✅ Step 1: Data Preparation
 
 - Load IMDB dataset using Pandas
@@ -89,11 +89,12 @@ MovieReviewClassifier/
    git clone https://github.com/Md-Rasel-Uddin/Movie-Review-Classifier-using-IMDb-dataset.git
    cd Movie-Review-Classifier-using-IMDb-dataset
 
-2. Install Dependencies
+2. **Install Dependencies**
+   ```bash
    pip install -r requirements.txt
 
 
-📊 Results
+## 📊 Results
 
 Traditional ML Models Performance:
 Model	Accuracy	      Precision	Recall	F1-Score
@@ -115,10 +116,10 @@ Max features: 20,000
 Min document frequency: 2
 
 
-🚀 Usage
+## 🚀 Usage
 Run the main script:
 
-python sentiment_app.py
+python streamlit_app.py
 
 The script will:
 
@@ -143,30 +144,28 @@ Prediction (DistilBERT): NEGATIVE (score: 0.9987)
 Enter movie review: quit
 Exiting...
 
-📜 Scripts
+## 📜 Scripts
 
 DemoScript.py
 
-Interactive sentiment analysis using ML or DL.
+In this file, an Interactive sentiment analysis using ML or DL script is given.
 
-Key features:
+# Key features:
 
-Preloads model and vectorizer/tokenizer
+- Preloads model and vectorizer/tokenizer
 
-Interactive loop for multiple reviews
+- Interactive loop for multiple reviews
 
-Model can be changed after each review
+- Model can be changed after each review
 
-Shows both label and confidence score (for DL model)
-
-
+- Shows both label and confidence score (for DL model)
 
 
-📦 requirements.txt
+## 📦 requirements.txt
 
-datasets
-joblib
+- datasets
+- joblib
 
-🧠 Training Notes
--ML model trained with Logistic Regression on TF-IDF features from movie reviews dataset
--DL model is a fine-tuned distilbert-base-uncased on the same dataset for binary classification (POSITIVE, NEGATIVE)
+## 🧠 Training Notes
+- ML model trained with Logistic Regression on TF-IDF features from movie reviews dataset
+- DL model is a fine-tuned distilbert-base-uncased on the same dataset for binary classification (POSITIVE, NEGATIVE)
