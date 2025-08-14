@@ -13,7 +13,7 @@ This project demonstrates **sentiment analysis**  for IMDB movie reviews, classi
 1. **Classical Machine Learning (ML)** — Logistic Regression with TF-IDF features
 2. **Deep Learning (DL)** — Fine-tuned DistilBERT model from Hugging Face Transformers
 
-The solution includes traditional machine learning models and deep learning approaches, with hyperparameter optimization and interactive demo capabilities.
+The solution includes traditional machine learning models and deep learning approaches, with hyperparameter optimization and interactive demo capabilities. We trained the DistilBERT model for very less epoch, only 5 epochs due to resources limitations.
 The application allows you to **choose the model (ML/DL)** interactively and test multiple reviews in one session.
 
 ---
@@ -118,25 +118,34 @@ Min document frequency: 2
 
 ## 🚀 Usage
 Download the full project and Run the main script:
+
+    
     streamlit_app.py
+
+    
 first install requirements.txt
-   ```bash
-   pip install -r requirements.txt
+
+      pip install -r requirements.txt
+
 Then run the app by
-   ```bash
-   streamlit run streamlit_app.py
+
+      streamlit run streamlit_app.py
+
 Finally it is ready to use and check review classification.
+
 # Demo script: where a user inputs a sentence, and the model predicts sentiment.
-   Run the Demo Script
-   ```bash
-   python DemoScript.py
- <img width="724" height="170" alt="image" src="https://github.com/user-attachments/assets/7a28e611-9424-487f-b59f-757a5fd28d70" />
+   After installing requirements.txr, then Run the Demo Script
+   
+      python DemoScript.py
+
+
+<img width="724" height="170" alt="image" src="https://github.com/user-attachments/assets/7a28e611-9424-487f-b59f-757a5fd28d70" />
+
+
 
 ## 📜 Scripts
 
-DemoScript.py
-
-In this file, an Interactive sentiment analysis using ML or DL script is given.
+DemoScript.py. In this file, an Interactive sentiment analysis using ML or DL script is given.
 
 # Key features:
 
