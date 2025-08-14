@@ -1,11 +1,12 @@
-IMDB Movie Reviews Sentiment Analysis
-AI/ML Engineer Task Submission - Backbencher Studio
-Author: Md Rasel Uddin
+IMDB Movie Reviews Sentiment Analysis - 
+AI/ML Engineer Task Submission - 
+Author: Md Rasel Uddin - 
 Date: August 2025
 
 <img width="1070" height="672" alt="image" src="https://github.com/user-attachments/assets/3f3ef619-13a1-4c36-b215-af5aa44bba9f" />
 
 Got to this deployed version link: https://rasel-movie-review-classifier-using-imdb-dataset.streamlit.app/
+
 
 This project demonstrates **sentiment analysis**  for IMDB movie reviews, classifying them as either Positive or Negative on movie reviews using two approaches:
 
@@ -20,69 +21,66 @@ The application allows you to **choose the model (ML/DL)** interactively and tes
 🎯 Task Requirements Completed
 ✅ Step 1: Data Preparation
 
-✅ Load IMDB dataset using Pandas
-✅ Text cleaning: Remove HTML tags, punctuation, numbers
-✅ Convert to lowercase
-✅ Remove English stopwords using NLTK
-✅ Split data: 80% train, 20% test
+- Load IMDB dataset using Pandas
+- Text cleaning: Remove HTML tags, punctuation, numbers
+- Convert to lowercase
+- Remove English stopwords using NLTK
+- Split data: 80% train, 20% test
 
 ✅ Step 2: Model Training
 
-✅ Implemented multiple ML models:
+Implemented multiple ML models:
 
-Logistic Regression
-Naive Bayes (MultinomialNB)
-Random Forest
+- Logistic Regression
+- Naive Bayes (MultinomialNB)
+- Random Forest
 
-
-✅ TF-IDF feature extraction with n-grams
-✅ Hyperparameter optimization using GridSearchCV
+- TF-IDF feature extraction with n-grams
+- Hyperparameter optimization using GridSearchCV
 
 ✅ Step 3: Evaluation
 
-✅ Comprehensive metrics: Accuracy, Precision, Recall, F1-Score
-✅ Confusion matrix visualization with matplotlib/seaborn
-✅ Model saved as .pkl files
-✅ Parameter optimization for improved accuracy
+- Comprehensive metrics: Accuracy, Precision, Recall, F1-Score
+- Confusion matrix visualization with matplotlib/seaborn
+- Model saved as .pkl files
+- Parameter optimization for improved accuracy
 
 ✅ Step 4: Bonus - Deep Learning
 
-✅ DistilBERT fine-tuning for sentiment classification
-✅ Transformer-based approach with HuggingFace
-✅ Model comparison: Traditional ML vs Deep Learning
+- DistilBERT fine-tuning for sentiment classification
+- Transformer-based approach with HuggingFace
+- Model comparison: Traditional ML vs Deep Learning
 
 🛠️ Technologies Used
-Core Libraries:
 
-pandas, numpy - Data manipulation
-scikit-learn - Machine learning models and evaluation
-nltk - Natural language processing
-matplotlib, seaborn - Data visualization
-joblib - Model persistence
+Core Libraries:
++ pandas, numpy - Data manipulation
++ scikit-learn - Machine learning models and evaluation
++ nltk - Natural language processing
++ matplotlib, seaborn - Data visualization
++ joblib - Model persistence
 
 Deep Learning:
-
-transformers - HuggingFace transformers library
-datasets - HuggingFace datasets
-torch - PyTorch backend
-
++ transformers - HuggingFace transformers library
++ datasets - HuggingFace datasets
++ torch - PyTorch backend
 
 ---
+
 
 ## 📂 Project Structure
 
 MovieReviewClassifier/
-├── best_model_lr.pkl # Trained Logistic Regression model
+├── best_model_lr.pkl    # Trained Logistic Regression model
 ├── tfidf_vectorizer.pkl # Fitted TF-IDF vectorizer
-├── distilbert_model/ # Fine-tuned DistilBERT model folder
+├── distilbert_model/    # Fine-tuned DistilBERT model folder
 ├── distilbert_tokenizer/ # Tokenizer folder for the DistilBERT model
-├── streamlit_app.py # Main sentiment analysis interactive script
-├── README.md # This file
-├── requirements.txt # List of Python dependencies
-├── streamlit_app.py # Main sentiment analysis interactive script
+├── streamlit_app.py    # Main sentiment analysis interactive script
+├── README.md            # This file
+├── requirements.txt    # List of Python dependencies
+├── streamlit_app.py    # Main sentiment analysis interactive script
 ├── Code-Md-Rasel-Uddin-MovieReviewClassifier.ipynb # the main code file
-└── DemoScript.py  # Interactive script to test with input 
-
+└── DemoScript.py        # Interactive script to test with input 
 
 ---
 
@@ -90,37 +88,32 @@ MovieReviewClassifier/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/sentiment-analysis.git
-   cd sentiment-analysis
-
+   git clone https://github.com/Md-Rasel-Uddin/Movie-Review-Classifier-using-IMDb-dataset.git
+   cd Movie-Review-Classifier-using-IMDb-dataset
 
 2. Install Dependencies
-
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 
 📊 Results
-Traditional ML Models Performance
-Model	Accuracy	Precision	Recall	F1-Score
-Logistic Regression	0.8642	0.8580	0.8720	0.8649
-Naive Bayes	0.8421	0.8654	0.8115	0.8376
-Random Forest	0.8398	0.8456	0.8312	0.8383
 
-Deep Learning Model Performance
-Model	Accuracy	Precision	Recall	F1-Score
+Traditional ML Models Performance:
+Model	Accuracy	      Precision	Recall	F1-Score
+Logistic Regression	0.8642	0.8580	0.8720	0.8649
+Naive Bayes	         0.8421	0.8654	0.8115	0.8376
+Random Forest	      0.8398	0.8456	0.8312	0.8383
+
+Deep Learning Model Performance:
+Model	      Accuracy	Precision	Recall	F1-Score
 DistilBERT	0.9123	0.9087	0.9165	0.9126
 
 Key Findings
 Best Traditional ML Model: Logistic Regression (86.4% accuracy)
-
 Best Overall Model: Fine-tuned DistilBERT (91.2% accuracy)
 
 Optimal TF-IDF Configuration:
-
 N-grams: (1, 2)
-
 Max features: 20,000
-
 Min document frequency: 2
 
 
@@ -153,7 +146,9 @@ Enter movie review: quit
 Exiting...
 
 📜 Scripts
-1. sentiment_app.py
+
+DemoScript.py
+
 Interactive sentiment analysis using ML or DL.
 
 Key features:
@@ -166,41 +161,8 @@ Model can be changed after each review
 
 Shows both label and confidence score (for DL model)
 
-2. debug_distilbert.py
-Debugging script to test DistilBERT behavior.
-
-Usage:
-
-bash
 
 
-python debug_distilbert.py
-
-What it does:
-
--Prints model label mapping (id2label)
-
--Tests predictions on various example reviews
-
--Compares your model with Hugging Face's default sentiment model
-
-⚠️ Troubleshooting
-1. DistilBERT always predicts "NEGATIVE"
-Possible causes:
-
--Imbalanced training data (majority negative samples)
-
--Label mapping issue in model config
-
--Tokenization mismatch between training and inference
-
-Solution:
-
--Check debug_distilbert.py output to verify label mapping
-
--If labels are swapped, fix id2label in config.json
-
--Re-train with class weights or balanced dataset
 
 📦 requirements.txt
 
