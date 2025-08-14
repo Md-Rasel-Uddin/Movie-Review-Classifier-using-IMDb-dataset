@@ -117,32 +117,20 @@ Min document frequency: 2
 
 
 ## 🚀 Usage
-Run the main script:
-
-python streamlit_app.py
-
-The script will:
-
--Ask you to choose ML or DL at the start
-
--Let you enter movie reviews repeatedly
-
--Show predictions until you type quit
-
-*Example Interaction*
-
-Choose model (ml/dl): ml
-Enter 'quit' to stop reviewing.
-
-Enter movie review: I absolutely loved this film!
-Prediction (Logistic Regression): Positive
-
-Choose model (ml/dl): dl
-Enter movie review: This was terrible and boring.
-Prediction (DistilBERT): NEGATIVE (score: 0.9987)
-
-Enter movie review: quit
-Exiting...
+Download the full project and Run the main script:
+    streamlit_app.py
+first install requirements.txt
+   ```bash
+   pip install -r requirements.txt
+Then run the app by
+   ```bash
+   streamlit run streamlit_app.py
+Finally it is ready to use and check review classification.
+# Demo script: where a user inputs a sentence, and the model predicts sentiment.
+   Run the Demo Script
+   ```bash
+   python DemoScript.py
+ <img width="724" height="170" alt="image" src="https://github.com/user-attachments/assets/7a28e611-9424-487f-b59f-757a5fd28d70" />
 
 ## 📜 Scripts
 
@@ -160,11 +148,35 @@ In this file, an Interactive sentiment analysis using ML or DL script is given.
 
 - Shows both label and confidence score (for DL model)
 
+# The Jupyter Notebook main code file contain script as well to predict review will:
+
+- Ask you to choose ML or DL at the start
+
+- Let you enter movie reviews repeatedly
+
+- Show predictions until you type quit
+
+*Example Interaction*
+
+Choose model (ml/dl): ml
+Enter 'quit' to stop reviewing.
+
+Enter movie review: I absolutely loved this film!
+Prediction (Logistic Regression): Positive
+
+Choose model (ml/dl): dl
+Enter movie review: This was terrible and boring.
+Prediction (DistilBERT): NEGATIVE (score: 0.9987)
+
+Enter movie review: quit
+Exiting...
+
 
 ## 📦 requirements.txt
 
-- datasets
 - joblib
+- transformers
+- streamlit
 
 ## 🧠 Training Notes
 - ML model trained with Logistic Regression on TF-IDF features from movie reviews dataset
