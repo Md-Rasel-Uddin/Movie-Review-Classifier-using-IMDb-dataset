@@ -3,6 +3,7 @@
 import streamlit as st
 import joblib
 from transformers import pipeline
+import torch
 
 # Setting the title of the application
 
@@ -21,7 +22,7 @@ if st.button("Predict"):
         sentiment = "Positive" if pred == 1 else "Negative"
     else:
         # Use HuggingFace pipeline for DistilBERT
-        classifier = pipeline("sentiment-analysis", model="distilbert_model", tokenizer="distilbert_tokenizer")
+        classifier = pipeline("sentiment-analysis", model="distilbert_model", tokenizer="distilbert_tokenizer", torch_dtype=torch.float32)
         result = classifier(review[:512])[0]  # Truncate if needed
         sentiment = result['label']  # e.g. 'POSITIVE' or 'NEGATIVE'
     
