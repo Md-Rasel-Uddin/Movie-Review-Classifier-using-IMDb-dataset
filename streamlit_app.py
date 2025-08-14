@@ -1,12 +1,10 @@
 # importing library
-
 import streamlit as st
 import joblib
 from transformers import pipeline
 import torch
 
 # Setting the title of the application
-
 st.title("IMDB Movie Review Sentiment")
 
 review = st.text_area("Enter a movie review:", height=200)
@@ -22,8 +20,21 @@ if st.button("Predict"):
         sentiment = "Positive" if pred == 1 else "Negative"
     else:
         # Use HuggingFace pipeline for DistilBERT
-        classifier = pipeline("sentiment-analysis", model="distilbert_model", tokenizer="distilbert_tokenizer", torch_dtype=torch.float32)
+        classifier = pipeline(
+            "sentiment-analysis", 
+            model="distilbert_model", 
+            tokenizer="distilbert_tokenizer",
+            torch_dtype=torch.float32
+        )
         result = classifier(review[:512])[0]  # Truncate if needed
-        sentiment = result['label']  # e.g. 'POSITIVE' or 'NEGATIVE'
+        
+        # Map model labels to readable sentiment
+        label_map = {
+            "LABEL_0": "Negative",
+            "LABEL_1": "Positive",
+            "NEGATIVE": "Negative",
+            "POSITIVE": "Positive"
+        }
+        sentiment = label_map.get(result['label'], result['label'])
     
     st.write(f"**Sentiment:** {sentiment}")
