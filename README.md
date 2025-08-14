@@ -96,24 +96,29 @@ MovieReviewClassifier/
 
 ## 📊 Results
 
-Traditional ML Models Performance:
-Model	Accuracy	      Precision	Recall	F1-Score
-Logistic Regression	0.8642	0.8580	0.8720	0.8649
-Naive Bayes	         0.8421	0.8654	0.8115	0.8376
-Random Forest	      0.8398	0.8456	0.8312	0.8383
+#### Traditional ML Models Performance
 
-Deep Learning Model Performance:
-Model	      Accuracy	Precision	Recall	F1-Score
-DistilBERT	0.9123	0.9087	0.9165	0.9126
+| Model               | Accuracy | Precision | Recall  | F1-Score |
+|--------------------|---------|-----------|--------|----------|
+| Logistic Regression | 0.8642  | 0.8580    | 0.8720 | 0.8649   |
+| Naive Bayes         | 0.8421  | 0.8654    | 0.8115 | 0.8376   |
+| Random Forest       | 0.8398  | 0.8456    | 0.8312 | 0.8383   |
+
+#### Deep Learning Model Performance
+
+| Model      | Accuracy | Precision | Recall  | F1-Score |
+|-----------|---------|-----------|--------|----------|
+| DistilBERT | 0.9123  | 0.9087    | 0.9165 | 0.9126   |
+
 
 Key Findings
-Best Traditional ML Model: Logistic Regression (86.4% accuracy)
-Best Overall Model: Fine-tuned DistilBERT (91.2% accuracy)
+- Best Traditional ML Model: Logistic Regression (86.4% accuracy)
+- Best Overall Model: Fine-tuned DistilBERT (91.2% accuracy)
 
 Optimal TF-IDF Configuration:
-N-grams: (1, 2)
-Max features: 20,000
-Min document frequency: 2
+- N-grams: (1, 2)
+- Max features: 20,000
+- Min document frequency: 2
 
 
 ## 🚀 Usage
@@ -133,10 +138,12 @@ Then run the app by
 
 Finally it is ready to use and check review classification.
 
-# Demo script: where a user inputs a sentence, and the model predicts sentiment.
+### Demo script: where a user inputs a sentence, and the model predicts sentiment.
+
    After installing requirements.txr, then Run the Demo Script
    
       python DemoScript.py
+
 
 
 <img width="724" height="170" alt="image" src="https://github.com/user-attachments/assets/7a28e611-9424-487f-b59f-757a5fd28d70" />
@@ -147,7 +154,7 @@ Finally it is ready to use and check review classification.
 
 DemoScript.py. In this file, an Interactive sentiment analysis using ML or DL script is given.
 
-# Key features:
+### Key features:
 
 - Preloads model and vectorizer/tokenizer
 
@@ -157,7 +164,7 @@ DemoScript.py. In this file, an Interactive sentiment analysis using ML or DL sc
 
 - Shows both label and confidence score (for DL model)
 
-# The Jupyter Notebook main code file contain script as well to predict review will:
+### The Jupyter Notebook main code file contain script as well to predict review will:
 
 - Ask you to choose ML or DL at the start
 
