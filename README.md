@@ -5,7 +5,7 @@ Date: August 2025
 
 <img width="1070" height="672" alt="image" src="https://github.com/user-attachments/assets/3f3ef619-13a1-4c36-b215-af5aa44bba9f" />
 
-Got to this deployed version link: https://rasel-movie-review-classifier-using-imdb-dataset.streamlit.app/
+Go to this deployed version link: https://rasel-movie-review-classifier-using-imdb-dataset.streamlit.app/
 
 
 This project demonstrates **sentiment analysis**  for IMDB movie reviews, classifying them as either Positive or Negative on movie reviews using two approaches:
