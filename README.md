@@ -1,5 +1,4 @@
 IMDB Movie Reviews Sentiment Analysis - 
-AI/ML Engineer Task Submission - 
 Author: Md Rasel Uddin - 
 Date: August 2025
 
